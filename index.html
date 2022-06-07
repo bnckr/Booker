@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="books.png">
+    <title>Booker</title>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu"></span>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__titulo">Categorias</li>
+                <li class="lista__item"><a href="#" class="lista__link">Auto-ajuda</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Biografias</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Ficção e Horror</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Gastronomia</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Literatura</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Romance</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <img class="img__logo" src="books.64.png" alt="Booker">
+            <h1 class="container__titulo">Booker</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu" class="opcoes__item">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__item"><a href="#" class="lista__link">Auto-ajuda</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Biografias</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Ficção e Horror</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Gastronomia</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Literatura</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Romance</a></li>
+            </ul>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img class="img__books__fav" alt="Favoritos" src="heart.png"></a>
+            <a href="#" class="container__link"><img class="img__books" alt="Comprar" src="shop-bag.png">
+                <p class="container__texto">Minha Sacola</p>
+            </a>
+            <a href="#" class="container__link"><img class="img__books" alt="Perfil" src="user.png">
+                <p class="container__texto">Meu Perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu entertenimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrosel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <div class="carrossel__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="amor.jpg"></div>
+                    <div class="swiper-slide"><img src="realeza.jpg"></div>
+                    <div class="swiper-slide"><img src="mundo.jpg"></div>
+                    <div class="swiper-slide"><img src="dialogo.jpg"></div>
+                    <div class="swiper-slide"><img src="leitura.jpg"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <div class="card">
+                <!-- 1° Linha -->
+                <div class="card__descricao">
+                    <!-- 1° Coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
+                        <h2 class="descricao__nome">O Cortiço</h2>
+                        <p class="descricao__livro">Um dos mais importantes romances brasileiros
+                            do século 19, O cortiço expõe a formação de uma elite burguesa por meio de personagens
+                            marcantes.</p>
+                    </div>
+                    <!-- 2° Coluna -->
+                    <img src="cortico.jpg" class="descricao__img">
+                </div>
+                <!-- 2° Linha -->
+                <div class="card__botoes">
+                    <!-- 1° Coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item">
+                            <img src="heart.png" alt="Favoritar">
+                        </li>
+                        <li class="botoes__item">
+                            <img src="shop-bag.png" alt="Comprar">
+                        </li>
+                    </ul>
+                    <!-- 2° Coluna -->
+                    <a href="#" class="botoes__a">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Arthur Conan Doyle</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Stephen King</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Jane Austen</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">J.K. Rowling</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Virginia Woolf</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+    <hr />
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Booker</h2>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            direction: 'horizontal',
+            loop: false,
+
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+</body>
+
+</html>
